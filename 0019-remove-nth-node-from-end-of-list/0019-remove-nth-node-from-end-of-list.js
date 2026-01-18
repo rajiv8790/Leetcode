@@ -22,12 +22,11 @@ var removeNthFromEnd = function (head, n) {
     }
 
     let prePos = lenght - n;
-
     let pre = sentinel;
-    for (let i = 0; i < prePos; i++){
-        pre=pre.next
+    for (let i = 0; i < prePos; i++) {
+        pre = pre.next
     }
-    pre.next=pre.next.next;
+    pre.next = pre.next.next;
 
     return sentinel.next;
 
