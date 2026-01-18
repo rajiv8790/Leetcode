@@ -13,15 +13,23 @@
  */
 var getIntersectionNode = function (headA, headB) {
 
-     if (!headA || !headB) return null;
+    let storeList = new Set();
+    let curr = headA;
 
-    let pA = headA;
-    let pB = headB;
-
-    while (pA !== pB) {
-        pA = pA ? pA.next : headB;
-        pB = pB ? pB.next : headA;
+    while (curr) {
+        storeList.add(curr); 
+        curr = curr.next;
     }
 
-    return pA;
+    let curr2 = headB;
+    while (curr2) {
+        if (storeList.has(curr2)) {
+            return curr2;
+        }
+        curr2 = curr2.next;
+    }
+
+    return null
+
+
 };
