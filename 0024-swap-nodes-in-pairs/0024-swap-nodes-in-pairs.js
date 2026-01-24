@@ -5,29 +5,43 @@
  *     this.next = (next===undefined ? null : next)
  * }
  */
+
+
+//1st solution-------------------------
+/*   let dummy = new ListNode(0);
+    dummy.next = head;
+
+    let pre = dummy;
+    let curr = pre.next;
+    let n = curr.next;
+
+    while (curr && n) {
+        pre.next = n;
+        curr.next = n.next
+        n.next = curr;
+
+        pre = curr;
+        curr = pre.next
+        n = curr && curr.next;
+    }
+
+    return dummy.next; */
 /**
  * @param {ListNode} head
  * @return {ListNode}
  */
+
+//2nd solutions-----
+
 var swapPairs = function (head) {
     if (!head || !head.next) return head;
 
-     let dummy = new ListNode(0);
-    dummy.next = head;
+    let l = head;
+    let r = head.next;
 
-    let prev = dummy;
+    l.next = swapPairs(r.next);
+    r.next = l
 
-    while (prev.next && prev.next.next) {
-        let first = prev.next;
-        let second = first.next;
-
-        first.next = second.next;
-        second.next = first;
-        prev.next = second;
-
-        prev = first;
-    }
-
-    return dummy.next;
+    return r;
 
 };
