@@ -19,5 +19,7 @@ var reverseList = function (head) {
         curr = temp;
     }
     
-    return pre;
+    return pre;  
 };
+
+
