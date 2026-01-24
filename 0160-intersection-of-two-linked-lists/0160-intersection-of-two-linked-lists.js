@@ -14,11 +14,12 @@
 var getIntersectionNode = function (headA, headB) {
 
     let storeList = new Set();
+
     let curr = headA;
 
     while (curr) {
-        storeList.add(curr); 
-        curr = curr.next;
+        storeList.add(curr)
+        curr = curr.next
     }
 
     let curr2 = headB;
@@ -26,10 +27,11 @@ var getIntersectionNode = function (headA, headB) {
         if (storeList.has(curr2)) {
             return curr2;
         }
+
         curr2 = curr2.next;
     }
 
-    return null
 
+    return null;
 
 };
