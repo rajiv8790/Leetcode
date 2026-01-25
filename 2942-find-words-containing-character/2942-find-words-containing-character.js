@@ -1,0 +1,16 @@
+/**
+ * @param {string[]} words
+ * @param {character} x
+ * @return {number[]}
+ */
+var findWordsContaining = function (words, x) {
+    let store = []
+    for (let i = 0; i < words.length; i++) {
+        if (words[i].includes(x)) {
+            store[store.length] = i
+        }
+    }
+
+    return store;
+
+};
