@@ -3,16 +3,18 @@
  * @return {string}
  */
 var largestOddNumber = function (num) {
-    num = num.split('')
-    let newArr = '';
-    let n = num.length;
-    for (let i = n - 1; i >= 0; i--) {
+    let result = "";
+    let foundOdd = false;
 
-        if (!(num[i] % 2 === 0 && newArr.length === 0)) {
-            newArr = num[i] + newArr;
+    for (let i = num.length - 1; i >= 0; i--) {
+        if (!foundOdd && ((num[i] - '0') % 2 === 1)) {
+            foundOdd = true;
         }
 
+        if (foundOdd) {
+            result = num[i] + result;
+        }
     }
 
-    return newArr
+    return result;
 };
