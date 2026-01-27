@@ -3,20 +3,10 @@
  * @param {string} t
  * @return {boolean}
  */
-var isAnagram = function(s, t) {
-   
-     let num1 = []
-    let num2 = []
-    for (let i = 0; i < s.length; i++) {
-        num1.push(s[i].charCodeAt(0) - 96)
+var isAnagram = function (s, t) {
 
-    }
-    for (let i = 0; i < t.length; i++) {
-        num2.push(t[i].charCodeAt(0) - 96)
 
-    }
-   
-    return [...num1].sort().join('') === [...num2].sort().join('');
+    return s.split('').sort().join('') === t.split('').sort().join('');
 
 
 };
