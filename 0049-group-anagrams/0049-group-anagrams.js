@@ -4,24 +4,19 @@
  */
 var groupAnagrams = function(strs) {
     
-     const groups = new Map();
+    const map = new Map();
 
-    for (const word of strs) {
-        // build frequency
-        const freq = {};
-        for (const ch of word) {
-            freq[ch] = (freq[ch] || 0) + 1;
-        }
-
-        // canonical key
-        const key = Object.keys(freq) .sort() .map(k => `${k}:${freq[k]}`) .join("|");
-        // group
-        if (!groups.has(key)) {
-            groups.set(key, []);
-        }
-        
-        groups.get(key).push(word);
+  for (const word of strs) {
+    const count = Array(26).fill(0);
+    for (const ch of word) {
+      count[ch.charCodeAt(0) - 97]++;
     }
 
-    return Array.from(groups.values());
+    const key = count.join("#");
+
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(word);
+  }
+
+  return [...map.values()];
 };
