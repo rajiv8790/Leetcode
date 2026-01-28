@@ -6,6 +6,7 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/rajivr021/Leetcode/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/rajivr021/Leetcode/tree/master/0049-group-anagrams) |
 | [0704-binary-search](https://github.com/rajivr021/Leetcode/tree/master/0704-binary-search) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rajivr021/Leetcode/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/rajivr021/Leetcode/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
@@ -15,6 +16,7 @@ A collection of LeetCode questions to ace the coding interview!
 ## Sorting
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/rajivr021/Leetcode/tree/master/0049-group-anagrams) |
 | [0242-valid-anagram](https://github.com/rajivr021/Leetcode/tree/master/0242-valid-anagram) |
 | [1877-minimize-maximum-pair-sum-in-array](https://github.com/rajivr021/Leetcode/tree/master/1877-minimize-maximum-pair-sum-in-array) |
 | [1984-minimum-difference-between-highest-and-lowest-of-k-scores](https://github.com/rajivr021/Leetcode/tree/master/1984-minimum-difference-between-highest-and-lowest-of-k-scores) |
@@ -72,6 +74,7 @@ A collection of LeetCode questions to ace the coding interview!
 ## Hash Table
 |  |
 | ------- |
+| [0049-group-anagrams](https://github.com/rajivr021/Leetcode/tree/master/0049-group-anagrams) |
 | [0141-linked-list-cycle](https://github.com/rajivr021/Leetcode/tree/master/0141-linked-list-cycle) |
 | [0160-intersection-of-two-linked-lists](https://github.com/rajivr021/Leetcode/tree/master/0160-intersection-of-two-linked-lists) |
 | [0205-isomorphic-strings](https://github.com/rajivr021/Leetcode/tree/master/0205-isomorphic-strings) |
@@ -100,6 +103,7 @@ A collection of LeetCode questions to ace the coding interview!
 |  |
 | ------- |
 | [0014-longest-common-prefix](https://github.com/rajivr021/Leetcode/tree/master/0014-longest-common-prefix) |
+| [0049-group-anagrams](https://github.com/rajivr021/Leetcode/tree/master/0049-group-anagrams) |
 | [0058-length-of-last-word](https://github.com/rajivr021/Leetcode/tree/master/0058-length-of-last-word) |
 | [0125-valid-palindrome](https://github.com/rajivr021/Leetcode/tree/master/0125-valid-palindrome) |
 | [0205-isomorphic-strings](https://github.com/rajivr021/Leetcode/tree/master/0205-isomorphic-strings) |
